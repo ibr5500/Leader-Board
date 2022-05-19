@@ -541,50 +541,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 class UserScore {
-  constructor(user, score) {
-    this.user = user;
-    this.score = score;
-  }
+    constructor(user, score) {
+        this.user = user;
+        this.score = score;
+    }
 
     playersData = [];
 
     url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/QE8nBkXmdfd1YoxrlAjT/scores/';
 
     getData = () => {
-      const scores = document.getElementById('scores-container');
-      scores.innerHTML = this.playersData.map((elem, index) => `<p class=${index % 2 !== 0 ? 'row-bg' : ''} >${elem.user}: <span>${elem.score}</span></p>`).join('');
+        const scores = document.getElementById('scores-container');
+        scores.innerHTML = this.playersData.map((elem, index) => `<p class=${index % 2 !== 0 ? 'row-bg' : ''} >${elem.user}: <span>${elem.score}</span></p>`).join('');
     }
 
-    fetchData = async () => {
-      try {
-        const data = await fetch(this.url);
-        const response = await data.json();
+    fetchData = async() => {
+        try {
+            const data = await fetch(this.url);
+            const response = await data.json();
 
-        response.result.map((elem) => this.playersData.push(elem));
-        return this.getData();
-      } catch (error) {
-        return error;
-      }
+            response.result.map((elem) => this.playersData.push(elem));
+            return this.getData();
+        } catch (error) {
+            return error;
+        }
     };
 
-    addNewScore = async ({ user, score }) => {
-      try {
-        const record = {
-          method: 'POST',
-          headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ user, score }),
-        };
+    addNewScore = async({ user, score }) => {
+        try {
+            const record = {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ user, score }),
+            };
 
-        const data = await fetch(this.url, record);
-        const response = await data.json();
-        this.scoreData.push(response);
-        return this.fetchData();
-      } catch (error) {
-        return error;
-      }
+            const data = await fetch(this.url, record);
+            const response = await data.json();
+            this.scoreData.push(response);
+            return this.fetchData();
+        } catch (error) {
+            return error;
+        }
     }
 }
 
@@ -689,8 +689,14 @@ form.addEventListener('submit', (event) => {
     form.score.value = '';
 });
 
+const scores = document.getElementById('scores-container');
+const scoresList = () => {
+    newUserScore.playersData = [];
+    newUserScore.fetchData();
+}
+
 const refersh = document.getElementById('refresh');
-refersh.addEventListener('click', newUserScore.fetchData);
+refersh.addEventListener('click', scoresList);
 window.addEventListener('DOMContentLoaded', newUserScore.getData);
 })();
 

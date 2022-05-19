@@ -13,6 +13,11 @@ form.addEventListener('submit', (event) => {
   form.score.value = '';
 });
 
+const scoresList = () => {
+  newUserScore.playersData = [];
+  newUserScore.fetchData();
+};
+
 const refersh = document.getElementById('refresh');
-refersh.addEventListener('click', newUserScore.fetchData);
+refersh.addEventListener('click', scoresList);
 window.addEventListener('DOMContentLoaded', newUserScore.getData);
