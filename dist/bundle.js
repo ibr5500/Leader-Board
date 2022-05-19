@@ -541,54 +541,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 class UserScore {
-    constructor(user, score) {
-        this.user = user;
-        this.score = score;
-    }
+  constructor(user, score) {
+    this.user = user;
+    this.score = score;
+  }
 
     playersData = [];
 
     url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/QE8nBkXmdfd1YoxrlAjT/scores/';
 
     getData = () => {
-
-        const scores = document.getElementById('scores-container');
-        scores.innerHTML = this.playersData.map((index, score) => `<p class=${index % 2 !== 0? 'row-bg' : ''} >${score.user}: <span>${score.score}</span></p>`).join('');
-
+      const scores = document.getElementById('scores-container');
+      scores.innerHTML = this.playersData.map((elem, index) => `<p class=${index % 2 !== 0 ? 'row-bg' : ''} >${elem.user}: <span>${elem.score}</span></p>`).join('');
     }
 
-    fetchData = async() => {
-        try {
-            const data = await fetch(this.url);
-            const response = await data.json();
+    fetchData = async () => {
+      try {
+        const data = await fetch(this.url);
+        const response = await data.json();
 
-            response.result.map((elem) => this.playersData.push(elem));
-            return this.getData();
-
-        } catch (error) {
-            return error;
-        }
+        response.result.map((elem) => this.playersData.push(elem));
+        return this.getData();
+      } catch (error) {
+        return error;
+      }
     };
 
-    addNewScore = async({ user, score }) => {
-        try {
-            const record = {
-                method: 'POST',
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ user, score }),
-            };
+    addNewScore = async ({ user, score }) => {
+      try {
+        const record = {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ user, score }),
+        };
 
-            const data = await fetch(this.url, record);
-            const response = await data.json();
-            this.scoreData.push(response);
-            return this.fetchData();
-
-        } catch (error) {
-            return error;
-        }
+        const data = await fetch(this.url, record);
+        const response = await data.json();
+        this.scoreData.push(response);
+        return this.fetchData();
+      } catch (error) {
+        return error;
+      }
     }
 }
 
@@ -677,11 +673,11 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _modules_usersScore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/usersScore */ "./src/modules/usersScore.js");
+/* harmony import */ var _modules_usersScore_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/usersScore.js */ "./src/modules/usersScore.js");
 
 
 
-const newUserScore = new _modules_usersScore__WEBPACK_IMPORTED_MODULE_1__["default"]();
+const newUserScore = new _modules_usersScore_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', (event) => {

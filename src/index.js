@@ -6,9 +6,9 @@ const form = document.querySelector('.form');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const userName = form.name.value;
-  const userScore = form.score.value;
-  newUserScore.addNewScore({ userName, userScore });
+  const user = form.name.value;
+  const score = form.score.value;
+  newUserScore.addNewScore({ user, score });
   form.name.value = '';
   form.score.value = '';
 });
