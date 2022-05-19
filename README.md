@@ -1,14 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard: setup project
+# Leaderboard: hit the API
 
 ## description: 
 
 > - A Leaderboard app that allows players to add their score, and see other players scores.
 
 > in this project:
-- Set up the linters for html, css, and JavaScript.
-- Set up webpack configurations.
+- Create a new api game by using postman.
+- Create class that containe functions (getting data, fetching data, and adding data from & to the api).
+- Create a function that display scores when click on the referch button. 
 
 
 
@@ -18,11 +19,12 @@
 - Css
 - JavaScript
 - Webpack
+- Leaderboard API.
 
 
 ## Live Demo (if available)
 
-Not Available
+Please (click)[https://ibr5500.github.io/Leader-Board/] for the live demo.
 
 ## Getting Started
 ### steps to run the project
