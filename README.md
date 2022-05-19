@@ -24,7 +24,7 @@
 
 ## Live Demo (if available)
 
-Please (click)[https://ibr5500.github.io/Leader-Board/] for the live demo.
+Please [click](https://ibr5500.github.io/Leader-Board/) for the live demo.
 
 ## Getting Started
 ### steps to run the project
