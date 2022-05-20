@@ -1,15 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard: hit the API
+# Leaderboard: final touches
 
 ## description: 
 
 > - A Leaderboard app that allows players to add their score, and see other players scores.
 
 > in this project:
-- Create a new api game by using postman.
-- Create class that containe functions (getting data, fetching data, and adding data from & to the api).
-- Create a function that display scores when click on the referch button. 
+- Add a function that displays the scores when reloading.
+- Changed the header position to outside the container.
+- Add overflow for the scores list.
+- Changed some layouts (colors, font family, and added box shadows). 
 
 
 

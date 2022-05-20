@@ -18,6 +18,11 @@ const scoresList = () => {
   newUserScore.fetchData();
 };
 
+const displayOnLoad = () => {
+  newUserScore.fetchData();
+  newUserScore.getData();
+};
+
 const refersh = document.getElementById('refresh');
 refersh.addEventListener('click', scoresList);
-window.addEventListener('DOMContentLoaded', newUserScore.getData);
+window.addEventListener('load', displayOnLoad);
