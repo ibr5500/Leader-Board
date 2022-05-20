@@ -11,22 +11,25 @@
 <script defer src="bundle.js"></script></head>
 
 <body>
-    <section class="container">
-        <div class="content">
-            <h1>Leader Board</h1>
-            <div class="scores-header">
-                <h2>Recent Scores</h2>
-                <button id="refresh" type="submit" class="refresh">Refresh</button>
+    <section>
+        <h1>Leader Board</h1>
+        <div class="container">
+            <div class="content">
+
+                <div class="scores-header">
+                    <h2>Recent Scores</h2>
+                    <button id="refresh" type="submit" class="refresh">Refresh</button>
+                </div>
+                <div id="scores-container" class="scores-container"></div>
             </div>
-            <div id="scores-container" class="scores-container"></div>
-        </div>
-        <div class="AddScore">
-            <h2>Add your Score</h2>
-            <form class="form">
-                <input type="text" name="name" placeholder="Your name" class="name" required><br/>
-                <input type="number" name="score" placeholder="Your score" class="author" required><br/>
-                <button type="submit" class="add">submit</button>
-            </form>
+            <div class="AddScore">
+                <h2>Add your Score</h2>
+                <form class="form">
+                    <input type="text" name="name" placeholder="Your name" class="name" required><br/>
+                    <input type="number" name="score" placeholder="Your score" class="author" required><br/>
+                    <button type="submit" class="add">Submit</button>
+                </form>
+            </div>
         </div>
     </section>
 </body>

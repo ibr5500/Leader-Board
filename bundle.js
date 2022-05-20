@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: monospace;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: 90%;\r\n  margin: 100px auto;\r\n}\r\n\r\n.container {\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n\r\n.content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 450px;\r\n  margin: 0 25px;\r\n}\r\n\r\n.content h1 {\r\n  font-size: 48px;\r\n  font-weight: 600;\r\n  margin: 0 0 0 -25px;\r\n}\r\n\r\n.scores-header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  margin: 50px 0 20px 0;\r\n  justify-content: space-between;\r\n}\r\n\r\n.scores-header > h2 {\r\n  font-size: 30px;\r\n}\r\n\r\n.scores-container {\r\n  border: 3px solid black;\r\n}\r\n\r\n.scores-container > p {\r\n  font-size: 20px;\r\n  font-weight: 500;\r\n  padding: 5px;\r\n}\r\n\r\nbutton {\r\n  border: 2px solid #000;\r\n  box-shadow: 2px 2px 2px #000;\r\n  background-color: #fff;\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  padding: 2px;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n.row-bg {\r\n  background-color: #d7e3ffad;\r\n}\r\n\r\n.AddScore {\r\n  margin: 110px 0 0 100px;\r\n  width: 300px;\r\n}\r\n\r\n.AddScore > h2 {\r\n  font-size: 30px;\r\n  margin: 0 0 15px 0;\r\n}\r\n\r\ninput {\r\n  width: auto;\r\n  font-size: 18px;\r\n  font-weight: 500;\r\n  margin: 5px auto;\r\n  padding: 2px;\r\n  border: 2px solid #000;\r\n  box-shadow: 2px 2px 2px #000;\r\n}\r\n\r\ninput::placeholder {\r\n  color: #000;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,UAAU;EACV,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,qBAAqB;EACrB,8BAA8B;AAChC;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,YAAY;AACd;;AAEA;EACE,sBAAsB;EACtB,4BAA4B;EAC5B,sBAAsB;EACtB,eAAe;EACf,gBAAgB;EAChB,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,2BAA2B;AAC7B;;AAEA;EACE,uBAAuB;EACvB,YAAY;AACd;;AAEA;EACE,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,WAAW;EACX,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,YAAY;EACZ,sBAAsB;EACtB,4BAA4B;AAC9B;;AAEA;EACE,WAAW;AACb","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: monospace;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: 90%;\r\n  margin: 100px auto;\r\n}\r\n\r\n.container {\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n\r\n.content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 450px;\r\n  margin: 0 25px;\r\n}\r\n\r\n.content h1 {\r\n  font-size: 48px;\r\n  font-weight: 600;\r\n  margin: 0 0 0 -25px;\r\n}\r\n\r\n.scores-header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  margin: 50px 0 20px 0;\r\n  justify-content: space-between;\r\n}\r\n\r\n.scores-header > h2 {\r\n  font-size: 30px;\r\n}\r\n\r\n.scores-container {\r\n  border: 3px solid black;\r\n}\r\n\r\n.scores-container > p {\r\n  font-size: 20px;\r\n  font-weight: 500;\r\n  padding: 5px;\r\n}\r\n\r\nbutton {\r\n  border: 2px solid #000;\r\n  box-shadow: 2px 2px 2px #000;\r\n  background-color: #fff;\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  padding: 2px;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n.row-bg {\r\n  background-color: #d7e3ffad;\r\n}\r\n\r\n.AddScore {\r\n  margin: 110px 0 0 100px;\r\n  width: 300px;\r\n}\r\n\r\n.AddScore > h2 {\r\n  font-size: 30px;\r\n  margin: 0 0 15px 0;\r\n}\r\n\r\ninput {\r\n  width: auto;\r\n  font-size: 18px;\r\n  font-weight: 500;\r\n  margin: 5px auto;\r\n  padding: 2px;\r\n  border: 2px solid #000;\r\n  box-shadow: 2px 2px 2px #000;\r\n}\r\n\r\ninput::placeholder {\r\n  color: #000;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Courier New', Courier, monospace;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: fit-content;\r\n  margin: 30px auto;\r\n  background-color: #124e78;\r\n}\r\n\r\nh1 {\r\n  width: 100%;\r\n  text-align: center;\r\n  font-size: 48px;\r\n  color: #f2bb05;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n.container {\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n\r\n.content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 450px;\r\n  margin: 0 25px;\r\n}\r\n\r\n.scores-header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  margin: 35px 0 20px 0;\r\n  justify-content: space-between;\r\n}\r\n\r\n.scores-container {\r\n  overflow: auto;\r\n  border-spacing: 15px;\r\n  height: 350px;\r\n  background-color: #f0f0c9;\r\n  border: 3px solid #6e0e0a;\r\n  border-radius: 10px;\r\n  box-shadow: 2px 2px 2px #000;\r\n}\r\n\r\n.scores-container::-webkit-scrollbar {\r\n  width: 5px;\r\n}\r\n\r\n.scores-container::-webkit-scrollbar-track {\r\n  margin: 0 0 0 2px;\r\n  box-shadow: inset 0 0 5px grey;\r\n  border-radius: 20px;\r\n}\r\n\r\n.scores-container::-webkit-scrollbar-thumb {\r\n  background: #d74e09;\r\n  border-radius: 20px;\r\n}\r\n\r\n.scores-container::-webkit-scrollbar-thumb:hover {\r\n  background: #d74e09b4;\r\n}\r\n\r\n.scores-header > h2 {\r\n  font-size: 30px;\r\n  color: #f2bb05;\r\n}\r\n\r\n.scores-container > p,\r\nspan {\r\n  color: #6e0e0a;\r\n  font-family: monospace;\r\n  font-size: 20px;\r\n  font-weight: 500;\r\n  padding: 5px;\r\n}\r\n\r\nbutton {\r\n  color: #6e0e0a;\r\n  border: 2px solid #6e0e0a;\r\n  border-radius: 8px;\r\n  box-shadow: 2px 2px 2px #000;\r\n  background-color: #f0f0c9;\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  padding: 2px;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\nbutton:hover {\r\n  background-color: #f2bb05;\r\n  transform: scale(1.2, 1.2);\r\n}\r\n\r\n.row-bg {\r\n  background-color: #f2bb05;\r\n}\r\n\r\n.AddScore {\r\n  margin: 85px 100px;\r\n  padding: 15px;\r\n  width: fit-content;\r\n  background-color: #d74e09;\r\n  border-radius: 8px;\r\n  border: 2px solid #6e0e0a;\r\n  box-shadow: 2px 2px 2px #000;\r\n}\r\n\r\n.AddScore > h2 {\r\n  font-size: 30px;\r\n  color: #f0f0c9;\r\n  margin: 0 0 15px 0;\r\n}\r\n\r\ninput {\r\n  width: auto;\r\n  font-family: monospace;\r\n  font-size: 18px;\r\n  font-weight: 500;\r\n  color: #6e0e0a;\r\n  margin: 5px auto;\r\n  padding: 5px;\r\n  border: 2px solid #6e0e0a;\r\n  border-radius: 8px;\r\n  box-shadow: 2px 2px 2px #000;\r\n}\r\n\r\ninput::placeholder {\r\n  color: #6e0e0a;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,8CAA8C;AAChD;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,kBAAkB;EAClB,iBAAiB;EACjB,yBAAyB;AAC3B;;AAEA;EACE,WAAW;EACX,kBAAkB;EAClB,eAAe;EACf,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,qBAAqB;EACrB,8BAA8B;AAChC;;AAEA;EACE,cAAc;EACd,oBAAoB;EACpB,aAAa;EACb,yBAAyB;EACzB,yBAAyB;EACzB,mBAAmB;EACnB,4BAA4B;AAC9B;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,iBAAiB;EACjB,8BAA8B;EAC9B,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,cAAc;AAChB;;AAEA;;EAEE,cAAc;EACd,sBAAsB;EACtB,eAAe;EACf,gBAAgB;EAChB,YAAY;AACd;;AAEA;EACE,cAAc;EACd,yBAAyB;EACzB,kBAAkB;EAClB,4BAA4B;EAC5B,yBAAyB;EACzB,eAAe;EACf,gBAAgB;EAChB,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,yBAAyB;EACzB,0BAA0B;AAC5B;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,kBAAkB;EAClB,yBAAyB;EACzB,kBAAkB;EAClB,yBAAyB;EACzB,4BAA4B;AAC9B;;AAEA;EACE,eAAe;EACf,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,WAAW;EACX,sBAAsB;EACtB,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,gBAAgB;EAChB,YAAY;EACZ,yBAAyB;EACzB,kBAAkB;EAClB,4BAA4B;AAC9B;;AAEA;EACE,cAAc;AAChB","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Courier New', Courier, monospace;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: fit-content;\r\n  margin: 30px auto;\r\n  background-color: #124e78;\r\n}\r\n\r\nh1 {\r\n  width: 100%;\r\n  text-align: center;\r\n  font-size: 48px;\r\n  color: #f2bb05;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n.container {\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n\r\n.content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 450px;\r\n  margin: 0 25px;\r\n}\r\n\r\n.scores-header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  margin: 35px 0 20px 0;\r\n  justify-content: space-between;\r\n}\r\n\r\n.scores-container {\r\n  overflow: auto;\r\n  border-spacing: 15px;\r\n  height: 350px;\r\n  background-color: #f0f0c9;\r\n  border: 3px solid #6e0e0a;\r\n  border-radius: 10px;\r\n  box-shadow: 2px 2px 2px #000;\r\n}\r\n\r\n.scores-container::-webkit-scrollbar {\r\n  width: 5px;\r\n}\r\n\r\n.scores-container::-webkit-scrollbar-track {\r\n  margin: 0 0 0 2px;\r\n  box-shadow: inset 0 0 5px grey;\r\n  border-radius: 20px;\r\n}\r\n\r\n.scores-container::-webkit-scrollbar-thumb {\r\n  background: #d74e09;\r\n  border-radius: 20px;\r\n}\r\n\r\n.scores-container::-webkit-scrollbar-thumb:hover {\r\n  background: #d74e09b4;\r\n}\r\n\r\n.scores-header > h2 {\r\n  font-size: 30px;\r\n  color: #f2bb05;\r\n}\r\n\r\n.scores-container > p,\r\nspan {\r\n  color: #6e0e0a;\r\n  font-family: monospace;\r\n  font-size: 20px;\r\n  font-weight: 500;\r\n  padding: 5px;\r\n}\r\n\r\nbutton {\r\n  color: #6e0e0a;\r\n  border: 2px solid #6e0e0a;\r\n  border-radius: 8px;\r\n  box-shadow: 2px 2px 2px #000;\r\n  background-color: #f0f0c9;\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  padding: 2px;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\nbutton:hover {\r\n  background-color: #f2bb05;\r\n  transform: scale(1.2, 1.2);\r\n}\r\n\r\n.row-bg {\r\n  background-color: #f2bb05;\r\n}\r\n\r\n.AddScore {\r\n  margin: 85px 100px;\r\n  padding: 15px;\r\n  width: fit-content;\r\n  background-color: #d74e09;\r\n  border-radius: 8px;\r\n  border: 2px solid #6e0e0a;\r\n  box-shadow: 2px 2px 2px #000;\r\n}\r\n\r\n.AddScore > h2 {\r\n  font-size: 30px;\r\n  color: #f0f0c9;\r\n  margin: 0 0 15px 0;\r\n}\r\n\r\ninput {\r\n  width: auto;\r\n  font-family: monospace;\r\n  font-size: 18px;\r\n  font-weight: 500;\r\n  color: #6e0e0a;\r\n  margin: 5px auto;\r\n  padding: 5px;\r\n  border: 2px solid #6e0e0a;\r\n  border-radius: 8px;\r\n  box-shadow: 2px 2px 2px #000;\r\n}\r\n\r\ninput::placeholder {\r\n  color: #6e0e0a;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -541,50 +541,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 class UserScore {
-    constructor(user, score) {
-        this.user = user;
-        this.score = score;
-    }
+  constructor(user, score) {
+    this.user = user;
+    this.score = score;
+  }
 
     playersData = [];
 
     url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/QE8nBkXmdfd1YoxrlAjT/scores/';
 
     getData = () => {
-        const scores = document.getElementById('scores-container');
-        scores.innerHTML = this.playersData.map((elem, index) => `<p class=${index % 2 !== 0 ? 'row-bg' : ''} >${elem.user}: <span>${elem.score}</span></p>`).join('');
+      const scores = document.getElementById('scores-container');
+      scores.innerHTML = this.playersData.map((elem, index) => `<p class=${index % 2 !== 0 ? 'row-bg' : ''} >${elem.user}: <span>${elem.score}</span></p>`).join('');
     }
 
-    fetchData = async() => {
-        try {
-            const data = await fetch(this.url);
-            const response = await data.json();
+    fetchData = async () => {
+      try {
+        const data = await fetch(this.url);
+        const response = await data.json();
 
-            response.result.map((elem) => this.playersData.push(elem));
-            return this.getData();
-        } catch (error) {
-            return error;
-        }
+        response.result.map((elem) => this.playersData.push(elem));
+        return this.getData();
+      } catch (error) {
+        return error;
+      }
     };
 
-    addNewScore = async({ user, score }) => {
-        try {
-            const record = {
-                method: 'POST',
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ user, score }),
-            };
+    addNewScore = async ({ user, score }) => {
+      try {
+        const record = {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ user, score }),
+        };
 
-            const data = await fetch(this.url, record);
-            const response = await data.json();
-            this.scoreData.push(response);
-            return this.fetchData();
-        } catch (error) {
-            return error;
-        }
+        const data = await fetch(this.url, record);
+        const response = await data.json();
+        this.scoreData.push(response);
+        return this.fetchData();
+      } catch (error) {
+        return error;
+      }
     }
 }
 
@@ -681,23 +681,27 @@ const newUserScore = new _modules_usersScore_js__WEBPACK_IMPORTED_MODULE_1__["de
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const user = form.name.value;
-    const score = form.score.value;
-    newUserScore.addNewScore({ user, score });
-    form.name.value = '';
-    form.score.value = '';
+  event.preventDefault();
+  const user = form.name.value;
+  const score = form.score.value;
+  newUserScore.addNewScore({ user, score });
+  form.name.value = '';
+  form.score.value = '';
 });
 
-const scores = document.getElementById('scores-container');
 const scoresList = () => {
-    newUserScore.playersData = [];
-    newUserScore.fetchData();
-}
+  newUserScore.playersData = [];
+  newUserScore.fetchData();
+};
+
+const displayOnLoad = () => {
+  newUserScore.fetchData();
+  newUserScore.getData();
+};
 
 const refersh = document.getElementById('refresh');
 refersh.addEventListener('click', scoresList);
-window.addEventListener('DOMContentLoaded', newUserScore.getData);
+window.addEventListener('load', displayOnLoad);
 })();
 
 /******/ })()
